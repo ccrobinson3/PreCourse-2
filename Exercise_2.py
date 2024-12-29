@@ -21,8 +21,8 @@ def partition(arr,low,high):
 def quickSort(arr,low,high):
     if low <= high:
         pivot_index = partition(arr,low,high)
-        quick_sort(arr,low,pivot_index-1)
-        quick_sort(arr,pivot_index+1,high)
+        quickSort(arr,low,pivot_index-1)
+        quickSort(arr,pivot_index+1,high)
     return arr
   
 # Driver code to test above 
